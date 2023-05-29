@@ -2,8 +2,8 @@ let tg = window.Telegram.WebApp;
 
 tg.expand();
 
-tg.MainButton.textColor = "#fff"
-tg.MainButton.color = "#1df83a";
+tg.MainButton.textColor = "#1df83a"
+tg.MainButton.color = "#fff";
 
 let item = "";
 
@@ -81,14 +81,16 @@ btn6.addEventListener("click", function(){
   }
 });
 
+
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
   tg.sendData(item);
 });
 
 let usercard = document.getElementById("usercard");
 
-let p = document.createElement("p");
-p.innerText = `${tg.initDataUnsafe.user.first_name}`
-`${tg.initDataUnsafe.user.last_name}`;
+let p = document.createElement('p');
+p.innerText = `${tg.initDataUnsafe.user.first_name}
+${tg.initDataUnsafe.user.last_name}
+${tg.initDataUnsafe.user.username} (${tg.initDataUnsafe.user.language_code})`;
 
 usercard.appendChild(p);
