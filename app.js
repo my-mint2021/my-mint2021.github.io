@@ -2,8 +2,8 @@ let tg = window.Telegram.WebApp;
 
 tg.expand();
 
-tg.MainButton.textColor = "#6a19b6"
-tg.MainButton.color = "#cd0000";
+tg.MainButton.textColor = "#1df83a"
+tg.MainButton.color = "#fff";
 
 let item = "";
 
@@ -92,24 +92,3 @@ p.innerText = `${tg.initDataUnsafe.user.first_name}`
 `${tg.initDataUnsafe.user.last_name}`;
 
 usercard.appendChild(p);
-
-
-
-
-
-
-
-
-// const btns = document.querySelectorAll('button[id^="btn"]');
-
-// for (let i = 0; i < btns.length; i++) {
-//   btns[i].addEventListener('click', function() {
-//     if (tg.MainButton.isVisible) {
-//       tg.MainButton.hide();
-//     } else {
-//       tg.MainButton.setText("Вы выбрали товар" `${i + 1}`);
-//       item = `${i + 1}`;
-//       tg.MainButton.show();
-//     }
-//   });
-// }
