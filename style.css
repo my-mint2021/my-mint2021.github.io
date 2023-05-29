@@ -33,14 +33,19 @@ body{
 }
 .btn{
   display: inline-block;
-  padding: 10px 20px;
+  padding: 12px 25px;
   border: none;
-  background-color: rgb(248,168,24);
-  color: #fff;
+  border-radius: 5px;
+  background-color: #f8a818;
+  color: #000;
   text-transform: uppercase;
   font-weight: 700;
   cursor: pointer;
   transition: all 0.3s ease 0s;
+}
+.btn:hover{
+  background-color: #1df83a;
+  color: #fff;
 }
 .usercard{
   text-align: center;
