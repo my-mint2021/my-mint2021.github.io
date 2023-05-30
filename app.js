@@ -94,3 +94,4 @@ ${tg.initDataUnsafe.user.last_name}
 ${tg.initDataUnsafe.user.username}`;
 
 usercard.appendChild(p);
+
