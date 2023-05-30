@@ -139,11 +139,13 @@ body {
   max-width: 390px;
   margin: 0 auto;
   padding: 10px 15px;
-/*   background-color: rgb(240, 240, 240); */
+  /* background-color: rgb(240, 240, 240); */
 }
 
 
 .title {
+  color: var(--tg-theme-button-text-color);
+
   font-family: 'Oswald', sans-serif;
   font-size: 24px;
   font-weight: 500;
@@ -151,6 +153,8 @@ body {
 }
 
 .subtitle {
+  color: var(--tg-theme-button-text-color);
+
   font-family: 'Oswald', sans-serif;
   font-size: 20px;
   text-align: center;
