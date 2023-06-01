@@ -7,21 +7,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
-  <title>Category1</title>
+  <title>Product Page</title>
 </head>
 
 <body>
   <div class="container">
+
+
     <header class="header">
       <div class="header__container">
-        <a href="index.html" class="header__back">
+        <a href="category1.html" class="header__back">
           <?xml version="1.0" ?><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><title/><g data-name="Layer 2" id="Layer_2"><path d="M10.1,23a1,1,0,0,0,0-1.41L5.5,17H29.05a1,1,0,0,0,0-2H5.53l4.57-4.57A1,1,0,0,0,8.68,9L2.32,15.37a.9.9,0,0,0,0,1.27L8.68,23A1,1,0,0,0,10.1,23Z"/></g></svg>
         </a>
+
+
         <a href="index.html" class="header__logo"><img src="image/logo.png" alt="logo"></a>
+        
         <div class="header__menu menu">
+        
           <div class="menu__icon">
             <span></span>
           </div>
+          
           <nav class="menu__body">
             <ul class="menu__list">
               <li class="menu__item"><a href="index.html" class="menu__link link">home</a></li>
@@ -31,57 +38,41 @@
               <li class="menu__item"><a href="category4.html" class="menu__link link">Keyboards</a></li>
               <li class="menu__item"><a href="category4.html" class="menu__link link">Headphones</a></li>
               <li class="menu__item"><a href="category4.html" class="menu__link link">Сoolers</a></li>
-
             </ul>
           </nav>
+
         </div>
       </div>
     </header>
 
   <main class="main">
-      <h1 class="main__title title">Store in telegram</h1>
-      <h2 class="main__subtitle subtitle">Category 1</h2>
+      <h1 class="main__title title">Product page</h1>
+      <h2 class="main__subtitle subtitle">Name of product</h2>
 
-      <div class="search">
-        <form class="search__form" action="">
-          <input class="search__input" type="search" name="search-input" id="search-input" placeholder="Search...">
-          <button class="search__button" type="submit" value="Search">
-            <i class="fa fa-search"></i>
-          </button>
-        </form>
+     <section class="main__prod prod">
+      <div class="prod__container">
+        <div class="prod__image">
+          <div class="prod__img">
+            <img src="image/product.jpg" alt="product 1">
+          </div>
+        </div>
+        <div class="prod__info">
+          <p class="prod__name">Product name</p>
+          <div class="prod__btn-box">
+            <div class="prod__price">1347 <span>USD</span></div>
+            <button class="prod__btn" type="submit">Buy</button>
+          </div>
+          <div class="prod__descr">
+            <h2 class="prod__title">Product description</h2>
+            <div class="prod__text">
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto ea earum iure libero? Alias explicabo quibusdam repudiandae? Cum, dignissimos quod?</p>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, dolore?</p>
+            </div>
+          </div>
+        </div>
       </div>
-
-      <ul class="inner">
-        <li class="item">
-          <img src="image/cat1/1.png" alt="image" class="img">
-          <a class="btn" id="btn1" href="product.html">Example</a>
-        </li>
-        <li class="item">
-          <img src="image/cat1/2.png" alt="image" class="img">
-          <a class="btn" id="btn2" href="#">Product1</a>
-        </li>
-        <li class="item">
-          <img src="image/cat1/3.png" alt="image" class="img">
-          <a class="btn" id="btn3" href="#">Product1</a>
-        </li>
-        <li class="item">
-          <img src="image/cat1/4.png" alt="image" class="img">
-          <a class="btn" id="btn4" href="#">Product1</a>
-        </li>
-        <li class="item">
-          <img src="image/cat1/5.png" alt="image" class="img">
-          <a class="btn" id="btn5" href="#">Product1</a>
-        </li>
-        <li class="item">
-          <img src="image/cat1/3.png" alt="image" class="img">
-          <a class="btn" id="btn6" href="#">Product1</a>
-        </li>
-      </ul>
-
-      <div class="usercard" id="usercard">
-        <!-- <p>First name</p>
-        <p>Last name</p> -->
-      </div>
+     </section>
 
     </main>
   </div>
