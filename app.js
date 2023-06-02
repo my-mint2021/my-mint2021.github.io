@@ -14,15 +14,15 @@
         let name = document.getElementById("user_name").value;
         let email = document.getElementById("user_email").value;
         let phone = document.getElementById("user_phone").value;
-        if(name.lenght < 5) {
+        if(name.length < 5) {
             document.getElementById("error").innerText = 'Ошибка в имени';
             return;
         }
-        if(email.lenght < 5) {
+        if(email.length < 5) {
             document.getElementById("error").innerText = 'Ошибка в email';
             return;
         }
-        if(phone.lenght < 5) {
+        if(phone.length < 5) {
             document.getElementById("error").innerText = 'Ошибка в номере телефона';
             return;
         }
