@@ -107,3 +107,18 @@ ${tg.initDataUnsafe.user.username}`;
 
 usercard.appendChild(p);
 
+var page1Link = document.getElementById("btn1");
+var page2Link = document.getElementById("btn2");
+
+// Добавляем обработчик клика на каждую ссылку
+page1Link.addEventListener("click", function(){
+ window.location.href = "category1.html";
+});
+
+page2Link.addEventListener("click", function(){
+ window.location.href = "category2.html";
+});
+
+page3Link.addEventListener("click", function(){
+ window.location.href = "page3.html";
+});
