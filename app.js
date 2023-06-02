@@ -1,11 +1,13 @@
-// получаем ссылку на элемент ссылки
-const link = document.getElementById('link');
+      let tg = window.Telegram.WebApp;
+      let buy = document.getElementById("buy");
+      let order = document.getElementById("order");
 
-// прикрепляем обработчик событий на ссылку
-link.addEventListener('click', (event) => {
-  // отменяем стандартное поведение ссылки
-  event.preventDefault();
+      buy.addEventListener("click", () => {
+        document.getElementById("main").style.display = "none";
+        document.getElementById("form").style.display = "block";
+        document.getElementById("user_name").value = tg.initDataUnsafe.user.first_name + " " + tg.initDataUnsafe.user.last_name;
+      });
 
-  // открываем новую страницу внутри бота
-  window.open('prod.html', '_self');
-});
+      order.addEventListener("click", () => {
+        tg.close();
+      });
