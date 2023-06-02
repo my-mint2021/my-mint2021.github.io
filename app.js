@@ -1,8 +1,6 @@
-// получаем ссылку на кнопку
-const linkButton = document.getElementById('link');
-
-// добавляем обработчик события нажатия на кнопку
-linkButton.addEventListener('click', () => {
-  // вызываем функцию TelegramWebviewProxy для открытия ссылки внутри бота
-  window.TelegramWebviewProxy('https://my-mint2021.github.io/prod.html');
+var tgLink = document.getElementById('link');
+tgLink.addEventListener('click', function(event) {
+  event.preventDefault();
+  var url = tgLink.getAttribute('href');
+  window.TelegramWebApp.openUrl(url);
 });
