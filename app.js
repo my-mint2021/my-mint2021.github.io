@@ -5,7 +5,7 @@
       tg.expand();
 
       ata.addEventListener("click", () => {
-        openTelegramLink(url'https://my-mint2021.github.io/cat.html');
+       /* openTelegramLink(url'https://my-mint2021.github.io/cat.html');*/
         console.log('нажата кнопка');
       });
 
