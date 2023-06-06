@@ -1,7 +1,14 @@
       let tg = window.Telegram.WebApp;
       let buy = document.getElementById("buy");
       let order = document.getElementById("order");
+      let ata = document.getElementById("ata");
       tg.expand();
+
+      ata.addEventListener("click", () => {
+        openTelegramLink(url'https://my-mint2021.github.io/cat.html');
+      });
+
+
 
       buy.addEventListener("click", () => {
         document.getElementById("main").style.display = "none";
@@ -35,4 +42,4 @@
         tg.sendData(JSON.stringify(data));
 
         tg.close();
-      });button
+      });
