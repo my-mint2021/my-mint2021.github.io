@@ -262,6 +262,9 @@ body._lock {
 
 .title {
     color: var(--tg-theme-button-text-color);
+    color: var(--tg-theme-button-color);
+    color:var(--tg-theme-text-color);
+
     font-family: 'Oswald', sans-serif;
     font-size: 24px;
     font-weight: 500;
@@ -270,6 +273,8 @@ body._lock {
 
 .subtitle {
     color: var(--tg-theme-button-text-color);
+    color:var(--tg-theme-text-color);
+
     font-family: 'Oswald', sans-serif;
     font-size: 20px;
     text-align: center;
