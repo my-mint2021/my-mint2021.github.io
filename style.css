@@ -122,7 +122,8 @@ body._lock {
     background-color: #ccc;
     cursor: pointer;
 }
-.menu__link{
+.menu__link,
+.header__logo{
     pointer-events: none;
 }
 .back {
