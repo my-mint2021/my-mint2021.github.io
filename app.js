@@ -1,3 +1,13 @@
+const iconMenu = document.querySelector('.menu__icon');
+if (iconMenu) {
+  const menuBody = document.querySelector('.menu__body');
+  iconMenu.addEventListener("click", function (e) {
+    document.body.classList.toggle('_lock')
+    iconMenu.classList.toggle('_active');
+    menuBody.classList.toggle('_active');
+  });
+} 
+
 const buttons = document.querySelectorAll('.btn');
 const divs = document.querySelectorAll('.categ');
 const main = document.querySelector('.main');
@@ -26,3 +36,10 @@ backButton.forEach(button => {
       });
     });
   });
+
+let tg = window.Telegram.WebApp;
+
+tg.expand();
+
+tg.MainButton.textColor = "#fff"
+tg.MainButton.color = "#1df83a";
