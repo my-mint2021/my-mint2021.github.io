@@ -117,7 +117,11 @@ body._lock {
 .btn:hover {
     background-color: #17EAEA;
 }
-
+.btn-disabled{
+    pointer-events: none;
+    background-color: #ccc;
+    cursor: pointer;
+}
 .back {
     margin: 20px 0px 20px 0px;
     display: block;
@@ -264,7 +268,7 @@ body._lock {
     color: var(--tg-theme-button-text-color);
     color: var(--tg-theme-button-color);
     color:var(--tg-theme-text-color);
-
+    color: #188cf8;
     font-family: 'Oswald', sans-serif;
     font-size: 24px;
     font-weight: 500;
@@ -274,7 +278,7 @@ body._lock {
 .subtitle {
     color: var(--tg-theme-button-text-color);
     color:var(--tg-theme-text-color);
-
+    color: #188cf8;
     font-family: 'Oswald', sans-serif;
     font-size: 20px;
     text-align: center;
