@@ -41,7 +41,7 @@
     </header>
 
         <main class="page">
-
+            <!-- -----------------------Первая страница---------------------- -->
             <section class="main">
                 <h1 class="main__title title">Store in telegram</h1>
                 <h2 class="main__subtitle subtitle">Catalog</h2>
@@ -67,9 +67,9 @@
                         <a class="btn" id="page3" href="#" data-target="categ3">Scanners</a>
                     </li>
                 </ul>
-                <div class="usercard" id="usercard"></div>
+                <!-- <div class="usercard" id="usercard"></div> -->
             </section>
-            <!-- -----------------------Вторая страница---------------------- -->
+            <!-- -----------------------Страница с категориями товаров---------------------- -->
             <section class="category-1 categ" id="categ1">
                 <a href="#" class="back">Назад</a>
                 <h2 class="main__subtitle subtitle">Monitors</h2>
@@ -85,11 +85,11 @@
                 <div class="category-1_box cat-box">
                     <ul class="cat-box__list">
                         <li class="cat-box_item"><img src="image/cat1/4.png" alt="image" class="img">
-                            <a class="btn btn-disabled" id="" href="#">Monitor 1</a>
+                            <a class="btn-p" id="" href="#" data-target="prod1">Monitor 1</a>
                         </li>
                         <li class="cat-box_item">
                             <img src="image/cat1/2.png" alt="image" class="img">
-                            <a class="btn btn-disabled" id="" href="#">Monitor 2</a>
+                            <a class="btn-p" id="" href="#" data-target="prod2">Monitor 2</a>
                         </li>
                         <li class="cat-box_item">
                             <img src="image/cat1/3.png" alt="image" class="img">
@@ -156,7 +156,62 @@
                     </ul>
                 </div>
             </section>
+            <!-- -----------------------Страница с продуктами---------------------- -->
+           
+            <section class="product-1 product" id="prod1">
+                <a href="#" class="back-prod" data-target="categ1">Назад</a>
+                <div class="product__box">
+                    <div class="product__image">
+                        <div class="product__img">
+                            <img src="image/cat1/4.png" alt="Product1">
+                        </div>
+                    </div>
+                    <p class="product__name">Product name 1</p>
+                    <div class="product__wrap">
+                        <div class="product__pricebox">
+                            <p class="product__price">15360</p><span class="product__pricespan">usd</span>
+                        </div>
+                        <button type="submit" class="product__btn buy-btn">Buy</button>
+                    </div>
+                    <div class="product__descrwrap">
+                        <h2 class="product__descrtitle">Product description</h2>
+                        <div class="product__descrbox">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, earum!</p>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, explicabo? Cumque illum dicta nam, facilis sit velit facere officia placeat.</p>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
 
+                    </div>
+                </div>
+            </section>
+            <section class="product-2 product" id="prod2">
+                <a href="#" class="back-prod" data-target="categ1">Назад</a>
+                <div class="product__box">
+                    <div class="product__image">
+                        <div class="product__img">
+                            <img src="image/cat1/2.png" alt="Product2">
+                        </div>
+                    </div>
+                    <p class="product__name">Product name 2</p>
+                    <div class="product__wrap">
+                        <div class="product__pricebox">
+                            <p class="product__price">9874</p><span class="product__pricespan">usd</span>
+                        </div>
+                        <button type="submit" class="product__btn buy-btn">Buy</button>
+                    </div>
+                    <div class="product__descrwrap">
+                        <h2 class="product__descrtitle">Product description</h2>
+                        <div class="product__descrbox">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, earum!</p>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, explicabo? Cumque illum dicta nam, facilis sit velit facere officia placeat.</p>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, explicabo? Cumque illum dicta nam, facilis sit velit facere officia placeat.</p>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
         </main>
     </div>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
